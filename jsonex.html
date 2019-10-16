@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <script src="./javascript/fetch.umd.js"></script>
+  <script>
+    window.fetch('https://de4dman.github.io/FastTapExplorer/json/test.json').then(function(response) {
+        return response.json();
+    }).catch(function(ex) {
+        let err = {err: "nojson", code: -1};
+        return err.json();
+    });
+  </script>
+</html>
