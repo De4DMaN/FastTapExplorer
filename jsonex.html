@@ -2,6 +2,8 @@
 <html>
   <script src="./javascript/fetch.umd.js"></script>
   <script>
+    import 'whatwg-fetch';
+    
     window.fetch('https://de4dman.github.io/FastTapExplorer/json/test.json').then(function(response) {
         return response.json();
     }).catch(function(ex) {
